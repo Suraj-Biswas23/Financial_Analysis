@@ -1,0 +1,16 @@
+<!-- finance_app/templates/upload.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Data</title>
+</head>
+<body>
+    <h2>Upload data.json File</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="data_file" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
